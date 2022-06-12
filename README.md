@@ -16,7 +16,6 @@ This project requires **Python** and the following Python libraries installed:
 - [NumPy](http://www.numpy.org/)
 - [Pandas](http://pandas.pydata.org/)
 - [tensorflow](https://www.tensorflow.org/)
-- [string](https://string-db.org/)
 - [pickle](Lib/pickle.py)
 
 You will also need to have software installed to run and execute a [Jupyter Notebook](http://jupyter.org/install.html).
