@@ -30,18 +30,24 @@ def clean(a):
     temp = temp.strip()
     return temp
 
+inp = [0] * 1
+
 # Request
 app = Flask(__name__)
 @app.route('/')
 def index():
     return "Hello world"
-@app.route('/predict',methods=['POST'])
+@app.route('/predict',methods=['GET', 'POST'])
 def predict():
-    user_input = request.form.get('user')
-    user_input = clean(str(user_input))
-    result = model.predict(pad_sequences(tokenizer.texts_to_sequences([user_input]),
-                                             truncating='post', maxlen=100))[0]
+    if request.method == 'POST':
+        user_input = request.form.get('user')
+        user_input = clean(str(user_input))
+        inp[0] = user_input
+        return user_input
+    else:
+        result = model.predict(pad_sequences(tokenizer.texts_to_sequences([inp[0]]),
+                                                truncating='post', maxlen=100))[0]
+        return jsonify({'Answer':lb.inverse_transform([np.argmax(result)])[0]})
 
-    return jsonify({'Answer':str(lb.inverse_transform([np.argmax(result)]))})
 if __name__ == '__main__':
     app.run(debug=True)
