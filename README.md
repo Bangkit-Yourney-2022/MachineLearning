@@ -1,7 +1,6 @@
-# MachineLearning YOURNEY
+<img src="https://user-images.githubusercontent.com/89693955/173196650-5da9c1c4-c5ee-407c-85c6-0f491dfe8c5e.png" alt="Logo of the project" align="right">
 
-<p align="center"><img src="> ![logo](https://user-images.githubusercontent.com/99655474/173210787-bb3b5a4a-0222-40d9-97fd-b0ac2cf31484.png)"></p>
-
+# YOURNEY (Your Smart Virtual Assistant to Great Your Future) &middot; [![Build Status](https://img.shields.io/travis/npm/npm/latest.svg?style=flat-square)](https://travis-ci.org/npm/npm) [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
 ## Abstract
 
 The unemployment rate for the next generation of the nation who has received approximately 12 years of education (up to high school/K, university, or diploma) is still relatively high. Not only that, there are also many teenagers who do not know the direction of their life goals and how to organize their lives to be more productive and able to support the future. Why does this happen?
